@@ -1,0 +1,154 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117; /* fundo escuro */
+  color: #c9d1d9; /* texto claro */
+  line-height: 1.6;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+
+}
+a:focus {
+  outline: 2px solid #58a6ff;
+  outline-offset: 4px;
+}
+
+header {
+  background-color: #161b22;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #30363d;
+}
+
+.HeaderLinks {
+     color: #58a6ff;
+  text-decoration: none;
+ border-right: 1px solid white;
+ border-left: 1px solid white;
+ padding-inline: 10px;
+ border-radius: 4px;
+}
+.HeaderLinks:hover {
+  background-color: #21262d;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+   
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h1, h2 {
+  color: #58a6ff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #161b22;
+  color: #8b949e;
+  border-top: 1px solid #30363d;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: max-height 0.5s ease, box-shadow 0.4s ease;
+  max-height: 120px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-top {
+  padding: 1rem;
+}
+
+.card-bottom {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.2s ease, max-height 0.2s ease;
+}
+
+.card img {
+  width: 50%;
+  border-radius: 0 0 6px 6px;
+  margin-top: 0.5rem;
+}
+
+.card button {
+  background-color: #238636;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.card:hover {
+  max-height: 400px;
+  box-shadow: 0 0 15px #58a6ff55;
+}
+
+.card:hover .card-bottom {
+  opacity: 1;
+  max-height: 300px;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #21262d;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.tech-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+}
+
