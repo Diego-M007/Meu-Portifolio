@@ -75,6 +75,19 @@ footer {
   border-top: 1px solid #30363d;
 }
 
+.TxtSobre {
+  padding: 10px;
+  background-color: #161b22;
+border: 1px solid #30363d;
+border-radius: 8px;
+box-shadow: 0 0 15px #58a6ff55;
+margin: 30px;
+}
+
+.TxtSobre h1 {
+  text-align: center;
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -95,6 +108,9 @@ footer {
 .card-top {
   padding: 1rem;
 }
+
+
+
 
 .card-bottom {
   opacity: 0;
