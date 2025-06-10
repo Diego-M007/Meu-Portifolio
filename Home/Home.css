@@ -1,0 +1,32 @@
+
+.TxtSobre {
+  padding: 10px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #58a6ff55;
+  margin: 30px;
+}
+.TxtSobre h1 {
+  text-align: center;
+}
+.foto-perfil {
+  text-align: center;
+  margin: 2rem 0;
+}
+.foto-perfil img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #58a6ff;
+  box-shadow: 0 0 12px #58a6ff88;
+  transition: transform 0.3s ease;
+}
+.foto-perfil img:hover {
+  transform: scale(1.05);
+}
+.destaque {
+  color: #58a6ff;
+  font-weight: bold;
+}
